@@ -41,7 +41,9 @@ public class amigo_1 : MonoBehaviour
             currentTarget = Random.Range(0,patrolPoints.Length);
             Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
             Vector2 direcion = (new Vector2(patrolPoints[currentTarget].position.x, patrolPoints[currentTarget].position.y)) - posicion;
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direcion, direcion.magnitude);
+            
+            posicion = posicion + direcion.normalized * 1.2f;
+            RaycastHit2D hit = Physics2D.Raycast(posicion, direcion, direcion.magnitude);
 
             if (hit.collider != null)
             {
