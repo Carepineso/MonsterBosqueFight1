@@ -42,14 +42,20 @@ public class amigo_1 : MonoBehaviour
             Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
             Vector2 direcion = (new Vector2(patrolPoints[currentTarget].position.x, patrolPoints[currentTarget].position.y)) - posicion;
             
-            posicion = posicion + direcion.normalized * 1.2f;
+            posicion = posicion + direcion.normalized * 1.5f;
             RaycastHit2D hit = Physics2D.Raycast(posicion, direcion, direcion.magnitude);
+            Debug.DrawRay(posicion, direcion, Color.green);
 
             if (hit.collider != null)
             {
                 if (hit.collider.CompareTag("Player"))
                 {
+                    Debug.DrawRay(posicion, direcion, Color.red);
                     repetir = true;
+                }
+                else
+                {
+                    Debug.DrawRay(posicion, direcion, Color.green);
                 }
             }
         } while (repetir);
