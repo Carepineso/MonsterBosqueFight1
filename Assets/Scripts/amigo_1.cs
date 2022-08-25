@@ -6,7 +6,6 @@ public class amigo_1 : MonoBehaviour
 {
     public float patrolSpeed = 0f;
     public float canhgeTargetD = 0.1f;
-    public Transform[] patrolPoints;
 
     int currentTarget = 0;
 
@@ -20,7 +19,7 @@ public class amigo_1 : MonoBehaviour
 
     private bool MoveToTarget()
     {
-        Vector3 distanceVector =  patrolPoints[currentTarget].position - transform.position;
+        Vector3 distanceVector = Qteszcohatl.singleton.patrolPoints[currentTarget].position - transform.position;
         if(distanceVector.magnitude < canhgeTargetD)
         {
             return true;
@@ -38,9 +37,9 @@ public class amigo_1 : MonoBehaviour
         do
         {
             repetir = false;
-            currentTarget = Random.Range(0,patrolPoints.Length);
+            currentTarget = Random.Range(0, Qteszcohatl.singleton.patrolPoints.Length);
             Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
-            Vector2 direcion = (new Vector2(patrolPoints[currentTarget].position.x, patrolPoints[currentTarget].position.y)) - posicion;
+            Vector2 direcion = (new Vector2(Qteszcohatl.singleton.patrolPoints[currentTarget].position.x, Qteszcohatl.singleton.patrolPoints[currentTarget].position.y)) - posicion;
             
             posicion = posicion + direcion.normalized * 1.5f;
             RaycastHit2D hit = Physics2D.Raycast(posicion, direcion, direcion.magnitude);

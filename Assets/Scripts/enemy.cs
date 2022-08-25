@@ -7,7 +7,7 @@ public class enemy : MonoBehaviour
     public Estados estado;
     public float patrolSpeed = 0f;
     public float canhgeTargetD = 0.1f;
-    public Transform[] enemyPoints;
+   
     private bool mover = true;
     public float radio = 3f;
     public LayerMask capaParceros;
@@ -75,7 +75,7 @@ public class enemy : MonoBehaviour
 
     private bool MoveToTarget()
     {
-        Vector3 distanceVector = enemyPoints[currentTarget].position - transform.position;
+        Vector3 distanceVector = Qteszcohatl.singleton.enemyPoints[currentTarget].position - transform.position;
         if (distanceVector.magnitude < canhgeTargetD)
         {
             return true;
@@ -99,9 +99,9 @@ public class enemy : MonoBehaviour
             mover = false;
             StartCoroutine(Quieto());
             repetir = false;
-            currentTarget = Random.Range(0, enemyPoints.Length);
+            currentTarget = Random.Range(0, Qteszcohatl.singleton.enemyPoints.Length);
             Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
-            Vector2 direcion = (new Vector2(enemyPoints[currentTarget].position.x, enemyPoints[currentTarget].position.y)) - posicion;
+            Vector2 direcion = (new Vector2(Qteszcohatl.singleton.enemyPoints[currentTarget].position.x, Qteszcohatl.singleton.enemyPoints[currentTarget].position.y)) - posicion;
             posicion = posicion + direcion.normalized * 1.2f;
             RaycastHit2D hit = Physics2D.Raycast(posicion, direcion, direcion.magnitude);
 

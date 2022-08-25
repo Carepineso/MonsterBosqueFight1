@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class spawn : MonoBehaviour
 {
-     public Transform[] spawnPaints;
+    public Transform[] spawnPaints;
     public GameObject prefabParcero;
     private int random= 0;
+    public bool can_sp = true;
     // Start is called before the first frame update
     void Start()
     {
-        SpawnParceros();
+         StartCoroutine(TSpawn());
     }
 
-    // Update is called once per frame
-    void SpawnParceros(){
-        random= Random.Range(0, spawnPaints.Length);
-        GameObject gameObject= Instantiate<GameObject>(prefabParcero, spawnPaints[random].position, Quaternion.identity);
-        
+    IEnumerator TSpawn()
+    {
+
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(4.0f, 14.0f));
+            random = Random.Range(0, spawnPaints.Length);
+            GameObject gameObject = Instantiate<GameObject>(prefabParcero, spawnPaints[random].position, Quaternion.identity);
+        }
     }
 }
