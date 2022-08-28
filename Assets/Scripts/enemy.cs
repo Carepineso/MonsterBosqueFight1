@@ -57,7 +57,7 @@ public class enemy : MonoBehaviour
         if (distanceVector.magnitude < canhgeTargetD)
         {
             //mato al objetivo
-            print("MATÉ A UN OBJETIVO");
+            print("MATï¿½ A UN OBJETIVO");
             CambiarEstado(Estados.patrol);
             Destroy(objetivoSeguir.gameObject);
         }
@@ -69,8 +69,9 @@ public class enemy : MonoBehaviour
     }
 
     void EstadoMuerto()
-    {
 
+    {
+        
     }
 
     private bool MoveToTarget()
