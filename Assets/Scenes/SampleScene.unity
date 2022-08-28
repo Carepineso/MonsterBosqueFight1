@@ -742,7 +742,10 @@ MonoBehaviour:
   - {fileID: 673687798}
   - {fileID: 1215604149}
   - {fileID: 1544782290}
-  prefabParcero: {fileID: 4218969463120919616, guid: e5078d0fad0582d45beac4ded5503216, type: 3}
+  prefabParcero:
+  - {fileID: 4317415855904618594, guid: fbe9008649c56504ca6b496c6d56c63b, type: 3}
+  - {fileID: 1058201773050015278, guid: 9dce39a7adf10f541a1dbcb5d4b4f7d5, type: 3}
+  - {fileID: 4218969463120919616, guid: e5078d0fad0582d45beac4ded5503216, type: 3}
   can_sp: 1
 --- !u!114 &319993706
 MonoBehaviour:
@@ -761,7 +764,10 @@ MonoBehaviour:
   - {fileID: 2133635829}
   - {fileID: 705343119}
   - {fileID: 1323028122}
-  prefabEnemy: {fileID: 5004765723736397882, guid: c5d8decd82959c040a7424611f978471, type: 3}
+  prefabEnemy:
+  - {fileID: 5004765723736397882, guid: fd2dfc4d59f25434196e9ef7521df90f, type: 3}
+  - {fileID: 5004765723736397882, guid: 071bed0fb5dadd24f98c7ebf9a60906d, type: 3}
+  - {fileID: 5004765723736397882, guid: c5d8decd82959c040a7424611f978471, type: 3}
   can_sp: 1
 --- !u!1 &366243726
 GameObject:
@@ -1803,7 +1809,7 @@ GameObject:
   - component: {fileID: 1275057711}
   - component: {fileID: 1275057712}
   m_Layer: 0
-  m_Name: Hexagon Flat-Top
+  m_Name: sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
