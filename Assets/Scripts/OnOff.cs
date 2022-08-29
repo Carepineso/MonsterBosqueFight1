@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OnOff : MonoBehaviour
 {
     public Collider2D collidosde;
+    public Slider slider;
+
     public float stamina = 100f;
     public float maxstamina = 100f;
     // Start is called before the first frame update
@@ -17,6 +20,8 @@ public class OnOff : MonoBehaviour
     void Update()
     {
         Estamina();
+
+        slider.value = stamina;
     }
 
     void Estamina()
