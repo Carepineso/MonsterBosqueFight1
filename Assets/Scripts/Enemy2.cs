@@ -1,16 +1,15 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy2 : MonoBehaviour
 {
-    public Estados estado;
+    public Estados2 estado;
     public float patrolSpeed = 0f;
     public float canhgeTargetD = 0.1f;
-   
+
     private bool mover = true;
     private bool canDie = false;
-    public bool invensible = false;
     public float radio = 3f;
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
@@ -21,19 +20,19 @@ public class Enemy : MonoBehaviour
     {
         ControlEstados();
     }
-    
+
 
     private void ControlEstados()
     {
         switch (estado)
         {
-            case Estados.agro:
+            case Estados2.agro:
                 EstadoAgro();
                 break;
-            case Estados.patrol:
+            case Estados2.patrol:
                 EstadoPatrol();
                 break;
-            case Estados.muerto:
+            case Estados2.muerto:
                 EstadoMuerto();
                 break;
             default:
@@ -41,17 +40,17 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void CambiarEstado(Estados ne)
+    private void CambiarEstado(Estados2 ne)
     {
         estado = ne;
     }
 
     void EstadoPatrol()
     {
-       if (MoveToTarget())
-       {
-           currentTarget = GetNextTarget();
-       }
+        if (MoveToTarget())
+        {
+            currentTarget = GetNextTarget();
+        }
     }
 
     void EstadoAgro()
@@ -61,12 +60,12 @@ public class Enemy : MonoBehaviour
         {
             //mato al objetivo
             print("MAT� A UN OBJETIVO");
-            CambiarEstado(Estados.patrol);
+            CambiarEstado(Estados2.patrol);
             Destroy(objetivoSeguir.gameObject);
         }
         else if (canDie == true)
         {
-            CambiarEstado(Estados.muerto);
+            CambiarEstado(Estados2.muerto);
         }
         else
         {
@@ -74,7 +73,7 @@ public class Enemy : MonoBehaviour
             transform.position += velocityVector * patrolSpeed * Time.deltaTime;
         }
 
-        
+
     }
 
     private void EstadoMuerto()
@@ -83,9 +82,9 @@ public class Enemy : MonoBehaviour
         mover = false;
         canDie = true;
         Destroy(this.gameObject, 1.0f);
-        CambiarEstado(Estados.patrol);
+        CambiarEstado(Estados2.patrol);
         StartCoroutine(VolverdeMuerto());
-        
+
     }
     IEnumerator VolverdeMuerto()
     {
@@ -112,7 +111,7 @@ public class Enemy : MonoBehaviour
             transform.position += velocityVector * patrolSpeed * Time.deltaTime;
         }
 
-        
+
 
         return false;
     }
@@ -159,10 +158,8 @@ public class Enemy : MonoBehaviour
     {
         while (!mover)
         {
-            invensible = true;
-            yield return new WaitForSeconds(3.0f);
+            yield return new WaitForSeconds(0f);
             mover = true;
-            invensible = false;
         }
     }
 
@@ -170,25 +167,25 @@ public class Enemy : MonoBehaviour
     {
         Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
         Collider2D col = Physics2D.OverlapCircle(posicion, radio, capaParceros);
-        if (col!=null && col.CompareTag("parcero"))
+        if (col != null && col.CompareTag("parcero"))
         {
             objetivoSeguir = col.transform;
-            CambiarEstado(Estados.agro);
+            CambiarEstado(Estados2.agro);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Linterna")&& !invensible)
+        if (other.CompareTag("Linterna"))
         {
-            CambiarEstado(Estados.muerto);    
+            CambiarEstado(Estados2.muerto);
         }
     }
 
 }
 
 [System.Serializable]
-public enum Estados
+public enum Estados2
 {
     agro,
     patrol,

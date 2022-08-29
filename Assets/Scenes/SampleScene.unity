@@ -732,7 +732,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319993702}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af8836da94ea77348a316fd2402dfb5e, type: 3}
   m_Name: 
@@ -765,9 +765,9 @@ MonoBehaviour:
   - {fileID: 705343119}
   - {fileID: 1323028122}
   prefabEnemy:
+  - {fileID: 5004765723736397882, guid: c5d8decd82959c040a7424611f978471, type: 3}
   - {fileID: 5004765723736397882, guid: fd2dfc4d59f25434196e9ef7521df90f, type: 3}
   - {fileID: 5004765723736397882, guid: 071bed0fb5dadd24f98c7ebf9a60906d, type: 3}
-  - {fileID: 5004765723736397882, guid: c5d8decd82959c040a7424611f978471, type: 3}
   can_sp: 1
 --- !u!1 &366243726
 GameObject:
@@ -1603,7 +1603,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1130630159}
   - component: {fileID: 1130630163}
-  - component: {fileID: 1130630164}
   m_Layer: 0
   m_Name: Kill
   m_TagString: Linterna
@@ -1655,18 +1654,6 @@ PolygonCollider2D:
       - {x: -0.25813884, y: 0.056443628}
       - {x: -0.25824437, y: -0.046389997}
       - {x: 8.260426, y: -2.8803635}
---- !u!114 &1130630164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130630158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 005a216720b209e43aecedcad540cc8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1174951514
 GameObject:
   m_ObjectHideFlags: 0

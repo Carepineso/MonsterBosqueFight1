@@ -102,6 +102,7 @@ MonoBehaviour:
   estado: 1
   patrolSpeed: 5
   canhgeTargetD: 0.1
+  mover: 1
   radio: 3
   capaParceros:
     serializedVersion: 2
