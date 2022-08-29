@@ -11,7 +11,6 @@ public class OnOff : MonoBehaviour
     void Start()
     {
         collidosde = GetComponent<PolygonCollider2D>();
-        collidosde.enabled = !collidosde.enabled;
     }
 
     // Update is called once per frame
@@ -22,15 +21,19 @@ public class OnOff : MonoBehaviour
 
     void Estamina()
     {
-        while (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
             collidosde.enabled = !collidosde.enabled;
-            if (stamina > 0)
-            {
-                stamina -= 5f * Time.deltaTime;
-            }
-
         }
-        //stamina += 2f * Time.deltaTime;
+
+        if (collidosde.enabled)
+        {
+            stamina -= 5.0f*Time.deltaTime;
+        }
+        else if (!collidosde.enabled && stamina<maxstamina)
+        {
+            stamina += 3.0f * Time.deltaTime;
+        }
+       
     }
 }
