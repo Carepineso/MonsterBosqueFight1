@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy1 : MonoBehaviour
 {
     public Estados estado;
     public float patrolSpeed = 0f;
@@ -194,3 +194,4 @@ public enum Estados
     patrol,
     muerto
 }
+

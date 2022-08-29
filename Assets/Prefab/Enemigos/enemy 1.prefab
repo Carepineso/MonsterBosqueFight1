@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5004765723736397861}
   - component: {fileID: 5004765723736397860}
-  - component: {fileID: 5004765723736397883}
   - component: {fileID: 6253657233248088049}
   - component: {fileID: 1681382393317839642}
+  - component: {fileID: 5473019308953276573}
   m_Layer: 6
   m_Name: enemy 1
   m_TagString: Enemigo
@@ -87,26 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5004765723736397883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5004765723736397882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef4a4bd93b99fb4d987c9e8123509db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  estado: 1
-  patrolSpeed: 5
-  canhgeTargetD: 0.1
-  radio: 3
-  capaParceros:
-    serializedVersion: 2
-    m_Bits: 55
-  objetivoSeguir: {fileID: 0}
 --- !u!70 &6253657233248088049
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +124,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5473019308953276573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5004765723736397882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1363c7b0ad7088d4f9b2964a97adc6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  estado: 1
+  patrolSpeed: 5
+  canhgeTargetD: 0.1
+  invensible: 0
+  radio: 3
+  capaParceros:
+    serializedVersion: 2
+    m_Bits: 55
+  objetivoSeguir: {fileID: 0}
