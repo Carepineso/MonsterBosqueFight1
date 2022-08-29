@@ -12,6 +12,8 @@ public class Enemy1 : MonoBehaviour
     private bool canDie = false;
     public bool invensible = false;
     public float radio = 3f;
+    public int contE1 = 0;
+    public int iContE1 = 1;
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
 
@@ -181,7 +183,9 @@ public class Enemy1 : MonoBehaviour
     {
         if (other.CompareTag("Linterna")&& !invensible)
         {
-            CambiarEstado(Estados.muerto);    
+            CambiarEstado(Estados.muerto);
+            contE1 = contE1 + iContE1;
+            print(contE1);
         }
     }
 

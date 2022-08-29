@@ -11,6 +11,8 @@ public class Enemy2 : MonoBehaviour
     private bool mover = true;
     private bool canDie = false;
     public float radio = 3f;
+    public int contE2 = 0;
+    public int iContE2 = 1;
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
 
@@ -179,6 +181,8 @@ public class Enemy2 : MonoBehaviour
         if (other.CompareTag("Linterna"))
         {
             CambiarEstado(Estados2.muerto);
+            contE2 = contE2 + iContE2;
+            print(contE2);
         }
     }
 
