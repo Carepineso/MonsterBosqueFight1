@@ -83,6 +83,8 @@ public class Enemy1 : MonoBehaviour
         mover = false;
         canDie = true;
         Destroy(this.gameObject, 1.0f);
+        contE1 = contE1 + iContE1;
+        print(contE1);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());
         
@@ -182,8 +184,7 @@ public class Enemy1 : MonoBehaviour
         if (other.CompareTag("Linterna")&& !invensible)
         {
             CambiarEstado(Estados.muerto);
-            contE1 = contE1 + iContE1;
-            print(contE1);
+            
         }
     }
 
