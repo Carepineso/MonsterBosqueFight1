@@ -1,0 +1,1200 @@
+fileFormatVersion: 2
+guid: 779b2a6f509f75f46ba94ad6c5ee9e66
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprites-mounstros_0
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 2951
+        width: 401
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dbcee1f751b9840906c310ea4c6cc1
+      internalID: -1220513830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_1
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 2951
+        width: 416
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9242e1176b1a3494d9dde2de600305fa
+      internalID: -1853097196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_2
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 2946
+        width: 397
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237267ae6e07674459e435aabe9e742c
+      internalID: -1947070530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_3
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 2951
+        width: 417
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c08eb28d8b1bb4db39d6d984c288d8
+      internalID: 1683750792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_4
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 2956
+        width: 400
+        height: 699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b9a20424094f54188767cffa8a84df
+      internalID: -1881551642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_5
+      rect:
+        serializedVersion: 2
+        x: 3145
+        y: 2961
+        width: 421
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cca141efa43e54d8640a2c30cbf5b0
+      internalID: 1617636891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_6
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 2946
+        width: 6294
+        height: 1742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3805817ba3da1146a4a0eb27562758f
+      internalID: -1725322608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_7
+      rect:
+        serializedVersion: 2
+        x: 5296
+        y: 2936
+        width: 396
+        height: 733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a69f5909fb45a249914608140abc35d
+      internalID: 23282621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_8
+      rect:
+        serializedVersion: 2
+        x: 5875
+        y: 2946
+        width: 397
+        height: 709
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ef801be3000474481be61ba992be44
+      internalID: 193412940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_9
+      rect:
+        serializedVersion: 2
+        x: 6475
+        y: 2946
+        width: 397
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52768896ad921f44d80949abf9795a97
+      internalID: -1738152619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_10
+      rect:
+        serializedVersion: 2
+        x: 7085
+        y: 2946
+        width: 401
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e840ed94f233954abf0ecb1e3490319
+      internalID: -1101665061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2099
+        width: 451
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4c647a5f04fea43b45f3215cdcef74
+      internalID: 1273577176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_12
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2094
+        width: 441
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b97712b76d1a94999be1f40c0882e2
+      internalID: 378134939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_13
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 2094
+        width: 441
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73c63890aeb1d54f9344f9b7e511621
+      internalID: -1455292945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_14
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 2099
+        width: 441
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9275e111fce3f564890ab1f34dc791b9
+      internalID: -26505642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_15
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 2099
+        width: 441
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e956ef845e486543bf69e8618067ea4
+      internalID: 425572007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_16
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 2099
+        width: 441
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d921bc5711c1f4eb34a95fff1568d7
+      internalID: -601422466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_17
+      rect:
+        serializedVersion: 2
+        x: 3735
+        y: 2109
+        width: 460
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4c65122208a6c4db3bee668c224afb
+      internalID: 1353308160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_18
+      rect:
+        serializedVersion: 2
+        x: 4790
+        y: 2116
+        width: 441
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c80910504964d48b499e19b920c2be
+      internalID: 1994245823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_19
+      rect:
+        serializedVersion: 2
+        x: 5350
+        y: 2119
+        width: 441
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19845a16fbbc87f47ba6dce4aed058c8
+      internalID: -1727367549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_20
+      rect:
+        serializedVersion: 2
+        x: 5883
+        y: 2119
+        width: 443
+        height: 718
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a319d6f2059b6ee4a9c3dbec42c7d0d4
+      internalID: 828960260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_21
+      rect:
+        serializedVersion: 2
+        x: 6421
+        y: 2124
+        width: 441
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71df7dae7ab75e34591822a12649a294
+      internalID: -570221161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_22
+      rect:
+        serializedVersion: 2
+        x: 6971
+        y: 2123
+        width: 441
+        height: 734
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbb13a6a8db9fa479f7be2bbf158b44
+      internalID: -198646937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_23
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1217
+        width: 386
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63c48adcd3ec234c973796c35bb99e5
+      internalID: 1949752031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_24
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1217
+        width: 465
+        height: 753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27f916e5a184a24ab28a59362f04a1e
+      internalID: 1490265342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_25
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 1217
+        width: 511
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5fc99203689004e80d53c73d5292bc
+      internalID: -52009423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_26
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 1217
+        width: 520
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f45743d05f46141af2f5ef275cd132
+      internalID: -911306213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_27
+      rect:
+        serializedVersion: 2
+        x: 2902
+        y: 1217
+        width: 510
+        height: 723
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8a13a322618864d8f5a36be098ee67
+      internalID: 1315716697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_28
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 1217
+        width: 510
+        height: 733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b101dcea29cbb04793f6e6009fd7b7c
+      internalID: 83452861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_29
+      rect:
+        serializedVersion: 2
+        x: 4775
+        y: 1217
+        width: 521
+        height: 733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b606c252a293bae46bab9fc3a2aa952f
+      internalID: -1640523167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_30
+      rect:
+        serializedVersion: 2
+        x: 5509
+        y: 1217
+        width: 525
+        height: 735
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496ddbb0a63744947900a19df0acd7c0
+      internalID: 847642370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_31
+      rect:
+        serializedVersion: 2
+        x: 6252
+        y: 1217
+        width: 520
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cb55cd0073b724e83b12c583803aa5
+      internalID: -409098785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_32
+      rect:
+        serializedVersion: 2
+        x: 6976
+        y: 1217
+        width: 525
+        height: 735
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a341d6be2a135449ee60803217534b
+      internalID: 1766336816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_33
+      rect:
+        serializedVersion: 2
+        x: 7709
+        y: 1217
+        width: 520
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3a36fe7d504834ba7b1d144ea94fdc
+      internalID: 467916042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_34
+      rect:
+        serializedVersion: 2
+        x: 8393
+        y: 1212
+        width: 520
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b5825b5aac67341bf8a005340a5102
+      internalID: 425992754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_35
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 12
+        width: 352
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34cfab5b3abfcd4aa3c10b02310cb9e
+      internalID: -1171440607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_36
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3
+        width: 351
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f820ce053b2a5dd448f8e554f6914580
+      internalID: -296086325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_37
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 17
+        width: 346
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9741e06af3069174eb60763f9657d6fe
+      internalID: -264292587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_38
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 3
+        width: 349
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a4cc14bb29418408d4b9c848ee16b8
+      internalID: 514922983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_39
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 12
+        width: 347
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0427c52099e249c4bb0d92771e7cd5b8
+      internalID: 1282284743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_40
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 17
+        width: 380
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a43fb8d1bafc2b4299e37a6ab81146f
+      internalID: 1288337073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_41
+      rect:
+        serializedVersion: 2
+        x: 3065
+        y: 3
+        width: 387
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b96e954a6f22c24a82f9f67c78dacfa
+      internalID: -735630355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_42
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 0
+        width: 481
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b7d129164f4e846be56c183df4ee19
+      internalID: -433001136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_43
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 0
+        width: 481
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4133bb69c311a634a8cbbef0127ac312
+      internalID: -1261162741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_44
+      rect:
+        serializedVersion: 2
+        x: 4755
+        y: 0
+        width: 476
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522db6cc26ae0bc4f938be533e261b9f
+      internalID: -1972442565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_45
+      rect:
+        serializedVersion: 2
+        x: 5380
+        y: 0
+        width: 480
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869a172198d1fe24ab6586c0f616f67d
+      internalID: -2021295516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_46
+      rect:
+        serializedVersion: 2
+        x: 6089
+        y: 0
+        width: 479
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd1bfeb25ba628428e4df5c1e059fd1
+      internalID: 1195570523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_47
+      rect:
+        serializedVersion: 2
+        x: 6782
+        y: 0
+        width: 481
+        height: 691
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d653447bb90fe4468c59eb39264bc82
+      internalID: -1660179395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites-mounstros_48
+      rect:
+        serializedVersion: 2
+        x: 7481
+        y: 0
+        width: 2557
+        height: 740
+      alignment: 9
+      pivot: {x: 0.08379265, y: 0.47787425}
+      border: {x: 0, y: 0, z: 2020, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb9a20e88ea882478e3f7c42d48b401
+      internalID: -1535645000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sprites-mounstros_5: 1617636891
+      sprites-mounstros_4: -1881551642
+      sprites-mounstros_47: -1660179395
+      sprites-mounstros_34: 425992754
+      sprites-mounstros_1: -1853097196
+      sprites-mounstros_14: -26505642
+      sprites-mounstros_6: -1725322608
+      sprites-mounstros_35: -1171440607
+      sprites-mounstros_3: 1683750792
+      sprites-mounstros_41: -735630355
+      sprites-mounstros_17: 1353308160
+      sprites-mounstros_46: 1195570523
+      sprites-mounstros_44: -1972442565
+      sprites-mounstros_2: -1947070530
+      sprites-mounstros_25: -52009423
+      sprites-mounstros_23: 1949752031
+      sprites-mounstros_20: 828960260
+      sprites-mounstros_32: 1766336816
+      sprites-mounstros_31: -409098785
+      sprites-mounstros_30: 847642370
+      sprites-mounstros_24: 1490265342
+      sprites-mounstros_29: -1640523167
+      sprites-mounstros_13: -1455292945
+      sprites-mounstros_19: -1727367549
+      sprites-mounstros_33: 467916042
+      sprites-mounstros_21: -570221161
+      sprites-mounstros_8: 193412940
+      sprites-mounstros_28: 83452861
+      sprites-mounstros_9: -1738152619
+      sprites-mounstros_15: 425572007
+      sprites-mounstros_10: -1101665061
+      sprites-mounstros_42: -433001136
+      sprites-mounstros_18: 1994245823
+      sprites-mounstros_0: -1220513830
+      sprites-mounstros_7: 23282621
+      sprites-mounstros_16: -601422466
+      sprites-mounstros_45: -2021295516
+      sprites-mounstros_22: -198646937
+      sprites-mounstros_37: -264292587
+      sprites-mounstros_40: 1288337073
+      sprites-mounstros_39: 1282284743
+      sprites-mounstros_48: -1535645000
+      sprites-mounstros_38: 514922983
+      sprites-mounstros_12: 378134939
+      sprites-mounstros_26: -911306213
+      sprites-mounstros_27: 1315716697
+      sprites-mounstros_36: -296086325
+      sprites-mounstros_43: -1261162741
+      sprites-mounstros_11: 1273577176
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
