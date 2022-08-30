@@ -141,6 +141,8 @@ MonoBehaviour:
   canhgeTargetD: 0.1
   invensible: 0
   radio: 3
+  contE1: 0
+  iContE1: 1
   capaParceros:
     serializedVersion: 2
     m_Bits: 55
