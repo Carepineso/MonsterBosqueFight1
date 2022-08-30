@@ -7,7 +7,6 @@ public class Enemy2 : MonoBehaviour
     public Estados2 estado;
     public float patrolSpeed = 0f;
     public float canhgeTargetD = 0.1f;
-
     private bool mover = true;
     private bool canDie = false;
     public float radio = 3f;
@@ -61,7 +60,7 @@ public class Enemy2 : MonoBehaviour
         if (distanceVector.magnitude < canhgeTargetD)
         {
             //mato al objetivo
-            print("MAT� A UN OBJETIVO");
+            //print("MAT� A UN OBJETIVO");
             CambiarEstado(Estados2.patrol);
             Destroy(objetivoSeguir.gameObject);
         }
@@ -80,7 +79,7 @@ public class Enemy2 : MonoBehaviour
 
     private void EstadoMuerto()
     {
-        print("Sex");
+        //print("Sex");
         mover = false;
         canDie = true;
         Destroy(this.gameObject, 1.0f);
