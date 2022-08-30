@@ -9,11 +9,13 @@ public class amigo_1 : MonoBehaviour
 
     int currentTarget = 0;
 
+
     void Update()
     {
         if(MoveToTarget())
         {
             currentTarget = GetNextTarget();
+            
         }
     }
 
@@ -39,6 +41,13 @@ public class amigo_1 : MonoBehaviour
             repetir = false;
             currentTarget = Random.Range(0, Qteszcohatl.singleton.patrolPoints.Length);
             Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
+            Vector2 posicion2 = posicion;
+
+            if (posicion2.x <0)
+            {
+                print("sexo");
+            }
+
             Vector2 direcion = (new Vector2(Qteszcohatl.singleton.patrolPoints[currentTarget].position.x, Qteszcohatl.singleton.patrolPoints[currentTarget].position.y)) - posicion;
             
             posicion = posicion + direcion.normalized * 1.5f;
