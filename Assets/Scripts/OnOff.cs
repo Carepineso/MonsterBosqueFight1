@@ -7,10 +7,8 @@ public class OnOff : MonoBehaviour
 {
     public Collider2D collidosde;
     public Slider slider;
-
     public float stamina = 100f;
     public float maxstamina = 100f;
-
     public bool prendida= true;
     // Start is called before the first frame update
     void Start()
@@ -46,7 +44,6 @@ public class OnOff : MonoBehaviour
             collidosde.enabled = !collidosde.enabled;
             StartCoroutine(Prender());
         } 
-       
     }
 
     IEnumerator Prender()
@@ -54,4 +51,5 @@ public class OnOff : MonoBehaviour
         yield return new WaitForSeconds(5F);
         prendida=true;
     }
+
 }
