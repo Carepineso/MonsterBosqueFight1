@@ -83,8 +83,6 @@ public class Enemy2 : MonoBehaviour
         mover = false;
         canDie = true;
         Destroy(this.gameObject, 1.0f);
-        contE2 = contE2 + iContE2;
-        print(contE2);
         CambiarEstado(Estados2.patrol);
         StartCoroutine(VolverdeMuerto());
 

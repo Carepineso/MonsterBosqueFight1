@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
+    public ContadorAmigos contadorAmigos;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,19 @@ public class SceneChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GameOver();
     }
 
     public void GameScene()
     {
         SceneManager.LoadScene("SampleScene");
+    }
+
+    public void GameOver()
+    {
+        if (contadorAmigos.contM==0)
+        {
+            SceneManager.LoadScene("EndScene");
+        }
     }
 }
