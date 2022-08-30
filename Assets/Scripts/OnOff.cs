@@ -28,7 +28,7 @@ public class OnOff : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && prendida) 
         {
-            collidosde.enabled = !collidosde.enabled;
+            OnOff2();
         }
 
         if (collidosde.enabled && stamina>0)
@@ -44,6 +44,11 @@ public class OnOff : MonoBehaviour
             collidosde.enabled = !collidosde.enabled;
             StartCoroutine(Prender());
         } 
+    }
+
+    public void OnOff2()
+    {
+        collidosde.enabled = !collidosde.enabled;
     }
 
     IEnumerator Prender()
