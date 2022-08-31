@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7639373284518512801}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: parcero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

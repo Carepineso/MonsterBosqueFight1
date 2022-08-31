@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5874012527627153709}
   - component: {fileID: 9220563290860134710}
   - component: {fileID: 2932902615584440065}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

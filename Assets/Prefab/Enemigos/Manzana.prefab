@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7743000069272520347}
   - component: {fileID: 2028270628403055301}
   - component: {fileID: 2640322037036494966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Manzana
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
