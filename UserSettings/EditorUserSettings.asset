@@ -5,6 +5,7 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -13,13 +14,16 @@ EditorUserSettings:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     RecentlyUsedSceneGuid-0:
-      value: 07090753030c0b585d595b2343200e4410151d2b282d23637b714b31e0b2326b
+      value: 5a52065751575c095f5a0a74417a0844144e1e2b2d7e77682f2d1c60e0e1626c
       flags: 0
     RecentlyUsedSceneGuid-1:
 <<<<<<< Updated upstream
       value: 5a08010204050c090959082144700f444e161a2b797027632e701c60b5b83560
       flags: 0
+<<<<<<< Updated upstream
 >>>>>>> main
 =======
 =======
@@ -57,6 +61,8 @@ EditorUserSettings:
 >>>>>>> Stashed changes
 =======
 >>>>>>> main
+=======
+>>>>>>> Stashed changes
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
@@ -65,8 +71,13 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
+<<<<<<< Updated upstream
   m_DesiredImportWorkerCount: 3
   m_StandbyImportWorkerCount: 2
+=======
+  m_DesiredImportWorkerCount: 1
+  m_StandbyImportWorkerCount: 1
+>>>>>>> Stashed changes
   m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
