@@ -6,10 +6,10 @@ public class Linterna : MonoBehaviour
 {
     public Vector3 posMouse;
     public float angulo;
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -22,5 +22,6 @@ public class Linterna : MonoBehaviour
             angulo+=180;
         }
         transform.eulerAngles = Vector3.forward * angulo;
+        print(angulo);
     }
 }
