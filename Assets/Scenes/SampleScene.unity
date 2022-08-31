@@ -745,7 +745,7 @@ MonoBehaviour:
   prefabParcero:
   - {fileID: 4317415855904618594, guid: fbe9008649c56504ca6b496c6d56c63b, type: 3}
   - {fileID: 1058201773050015278, guid: 9dce39a7adf10f541a1dbcb5d4b4f7d5, type: 3}
-  - {fileID: 4218969463120919616, guid: e5078d0fad0582d45beac4ded5503216, type: 3}
+  - {fileID: 5312464459835022651, guid: e5078d0fad0582d45beac4ded5503216, type: 3}
   can_sp: 1
 --- !u!114 &319993706
 MonoBehaviour:
@@ -765,9 +765,9 @@ MonoBehaviour:
   - {fileID: 705343119}
   - {fileID: 1323028122}
   prefabEnemy:
-  - {fileID: 5004765723736397882, guid: c5d8decd82959c040a7424611f978471, type: 3}
-  - {fileID: 5004765723736397882, guid: fd2dfc4d59f25434196e9ef7521df90f, type: 3}
-  - {fileID: 5004765723736397882, guid: 071bed0fb5dadd24f98c7ebf9a60906d, type: 3}
+  - {fileID: 2722777450503164310, guid: 4a7e0448e81798b44ba355f9ae5d0a33, type: 3}
+  - {fileID: 515782192998723804, guid: 7bfbdfb104e296c43a4267e32363c90f, type: 3}
+  - {fileID: 7064487620850243662, guid: 8e37bfb13af86214281ede41d2d66640, type: 3}
   can_sp: 1
 --- !u!1 &366243726
 GameObject:
@@ -2159,7 +2159,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130630158}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
