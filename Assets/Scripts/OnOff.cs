@@ -7,13 +7,15 @@ public class OnOff : MonoBehaviour
 {
     public Collider2D collidosde;
     public Slider slider;
+    public UnityEngine.Rendering.Universal.Light2D luz;
     public float stamina = 100f;
     public float maxstamina = 100f;
-    public bool prendida= true;
+    public bool prendida = true;
     // Start is called before the first frame update
     void Start()
     {
         collidosde = GetComponent<PolygonCollider2D>();
+        luz = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
     }
 
     // Update is called once per frame
@@ -42,6 +44,7 @@ public class OnOff : MonoBehaviour
         {
             prendida=false;
             collidosde.enabled = !collidosde.enabled;
+            luz.enabled = !luz.enabled;
             StartCoroutine(Prender());
         } 
     }
@@ -49,6 +52,8 @@ public class OnOff : MonoBehaviour
     public void OnOff2()
     {
         collidosde.enabled = !collidosde.enabled;
+        luz.enabled = !luz.enabled;
+        
     }
 
     IEnumerator Prender()

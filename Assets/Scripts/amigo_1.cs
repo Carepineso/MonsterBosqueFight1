@@ -38,21 +38,29 @@ public class amigo_1 : MonoBehaviour
         bool repetir = false;
         do
         {
+            
             repetir = false;
             currentTarget = Random.Range(0, Qteszcohatl.singleton.patrolPoints.Length);
             Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
             Vector2 posicion2 = posicion;
+            
 
-            if (posicion2.x <0)
-            {
-                print("sexo");
-            }
+
 
             Vector2 direcion = (new Vector2(Qteszcohatl.singleton.patrolPoints[currentTarget].position.x, Qteszcohatl.singleton.patrolPoints[currentTarget].position.y)) - posicion;
             
             posicion = posicion + direcion.normalized * 1.5f;
             RaycastHit2D hit = Physics2D.Raycast(posicion, direcion, direcion.magnitude);
             Debug.DrawRay(posicion, direcion, Color.green);
+
+            if (direcion.x < transform.position.x)
+            {
+                print("izqui");
+            }
+            else if (direcion.x > transform.position.x)
+            {
+                print("dere");
+            }
 
             if (hit.collider != null)
             {
