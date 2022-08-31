@@ -131,6 +131,15 @@ public class Enemy1 : MonoBehaviour
             posicion = posicion + direcion.normalized * 1.2f;
             RaycastHit2D hit = Physics2D.Raycast(posicion, direcion, direcion.magnitude);
 
+            if (direcion.x < transform.position.x)
+            {
+                print("izqui");
+            }
+            else if (direcion.x > transform.position.x)
+            {
+                print("dere");
+            }
+
             if (hit.collider != null)
             {
                 if (hit.collider.CompareTag("Player"))
