@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 1360029112}
   - component: {fileID: 1360029111}
   m_Layer: 0
-  m_Name: Recurso 8@4x
+  m_Name: Idle Move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
