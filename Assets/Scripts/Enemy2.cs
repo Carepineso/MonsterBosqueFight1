@@ -9,13 +9,20 @@ public class Enemy2 : MonoBehaviour
     public float canhgeTargetD = 0.1f;
     private bool mover = true;
     private bool canDie = false;
+    public bool flip = false;
     public float radio = 3f;
     public int contE2 = 0;
     public int iContE2 = 1;
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
+    private Animator animE2;
 
     int currentTarget = 0;
+
+    private void Start()
+    {
+        animE2 = this.GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -81,6 +88,7 @@ public class Enemy2 : MonoBehaviour
     {
         //print("Sex");
         mover = false;
+        animE2.SetTrigger("Muerto");
         canDie = true;
         Destroy(this.gameObject, 1.0f);
         CambiarEstado(Estados2.patrol);
@@ -133,10 +141,12 @@ public class Enemy2 : MonoBehaviour
 
             if (direcion.x < transform.position.x)
             {
+                flip = true;
                 print("izqui");
             }
             else if (direcion.x > transform.position.x)
             {
+                flip = false;
                 print("dere");
             }
             
@@ -156,6 +166,7 @@ public class Enemy2 : MonoBehaviour
     private void FixedUpdate()
     {
         DetectarParceros();
+        animE2.SetBool("Flip", flip);
     }
 
     private void OnDrawGizmos()

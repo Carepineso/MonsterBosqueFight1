@@ -10,13 +10,20 @@ public class Enemy1 : MonoBehaviour
     private bool mover = true;
     private bool canDie = false;
     public bool invensible = false;
+    public bool flip = false;
     public float radio = 3f;
     public int contE1 = 0;
     public int iContE1 = 1;
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
+    private Animator animA;
 
     int currentTarget = 0;
+
+    private void Start()
+    {
+        animA = this.GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -80,6 +87,7 @@ public class Enemy1 : MonoBehaviour
     private void EstadoMuerto()
     {
         //print("Sex");
+
         mover = false;
         canDie = true;
         Destroy(this.gameObject, 1.0f);
@@ -123,6 +131,7 @@ public class Enemy1 : MonoBehaviour
         do
         {
             mover = false;
+            StartCoroutine(ADespertarse());
             StartCoroutine(Quieto());
             repetir = false;
             currentTarget = Random.Range(0, Qteszcohatl.singleton.enemyPoints.Length);
@@ -133,10 +142,12 @@ public class Enemy1 : MonoBehaviour
 
             if (direcion.x < transform.position.x)
             {
+                flip = true;
                 print("izqui");
             }
             else if (direcion.x > transform.position.x)
             {
+                flip = false;
                 print("dere");
             }
 
@@ -156,6 +167,7 @@ public class Enemy1 : MonoBehaviour
     private void FixedUpdate()
     {
         DetectarParceros();
+        animA.SetBool("AFlip", flip);
     }
 
     private void OnDrawGizmos()
@@ -169,10 +181,17 @@ public class Enemy1 : MonoBehaviour
         while (!mover)
         {
             invensible = true;
-            yield return new WaitForSeconds(3.0f);
+            animA.SetTrigger("ADormir");
+            yield return new WaitForSeconds(5.0f);
             mover = true;
             invensible = false;
         }
+    }
+
+    IEnumerator ADespertarse()
+    {
+        yield return new WaitForSeconds(3.0f);
+        animA.SetTrigger("ADespertarse");
     }
 
     void DetectarParceros()
