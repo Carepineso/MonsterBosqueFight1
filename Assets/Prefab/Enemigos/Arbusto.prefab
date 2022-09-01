@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5874012527627153709}
   - component: {fileID: 9220563290860134710}
   - component: {fileID: 2932902615584440065}
+  - component: {fileID: -5562161522646923437}
   m_Layer: 6
   m_Name: Arbusto
   m_TagString: Enemigo
@@ -28,9 +29,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2722777450503164310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.11, y: -3.8, z: -0.043408867}
+  m_LocalPosition: {x: 3.55, y: -3.8, z: 3}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -147,3 +148,23 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   objetivoSeguir: {fileID: 0}
+--- !u!95 &-5562161522646923437
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2722777450503164310}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f1040284c447c945a5ac046f35006b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

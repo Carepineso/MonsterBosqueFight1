@@ -3399,7 +3399,10 @@ MonoBehaviour:
   - {fileID: 965244647}
   - {fileID: 1698553135}
   - {fileID: 1745904855}
-  prefabEnemy: []
+  prefabEnemy:
+  - {fileID: 2722777450503164310, guid: 4a7e0448e81798b44ba355f9ae5d0a33, type: 3}
+  - {fileID: 3527012252981756757, guid: 7bfbdfb104e296c43a4267e32363c90f, type: 3}
+  - {fileID: 7064487620850243662, guid: 8e37bfb13af86214281ede41d2d66640, type: 3}
   can_sp: 1
 --- !u!114 &411010766
 MonoBehaviour:
@@ -3432,8 +3435,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304deaf9443c1ff42ba551d5dd595cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPoints: []
-  patrolPoints: []
+  enemyPoints:
+  - {fileID: 84677392}
+  - {fileID: 2069368683}
+  - {fileID: 1548498824}
+  - {fileID: 685575626}
+  - {fileID: 1109889448}
+  - {fileID: 45392101}
+  - {fileID: 1509274144}
+  - {fileID: 1706157119}
+  - {fileID: 1182849656}
+  - {fileID: 2055484359}
+  - {fileID: 1881774630}
+  - {fileID: 435641518}
+  - {fileID: 1368237760}
+  - {fileID: 723787895}
+  - {fileID: 1738654421}
+  - {fileID: 1659198194}
+  - {fileID: 1536436462}
+  patrolPoints:
+  - {fileID: 302244975}
+  - {fileID: 145434345}
+  - {fileID: 1900274318}
+  - {fileID: 1565956065}
+  - {fileID: 693274221}
+  - {fileID: 919202583}
+  - {fileID: 637622033}
+  - {fileID: 1666380867}
+  - {fileID: 1811844941}
+  - {fileID: 1515798583}
+  - {fileID: 874393858}
+  - {fileID: 653646388}
+  - {fileID: 1061276388}
+  - {fileID: 509480683}
+  - {fileID: 1691272955}
+  - {fileID: 1962785299}
+  - {fileID: 481800492}
+  - {fileID: 651925032}
+  - {fileID: 1126850855}
+  - {fileID: 2016547350}
 --- !u!4 &411010768
 Transform:
   m_ObjectHideFlags: 0
@@ -4207,7 +4247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514597223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.09, y: 0.16, z: 8}
+  m_LocalPosition: {x: 1.7, y: 0.83, z: 8}
   m_LocalScale: {x: 0.10747281, y: 0.10747281, z: 0.10747281}
   m_ConstrainProportionsScale: 0
   m_Children: []
