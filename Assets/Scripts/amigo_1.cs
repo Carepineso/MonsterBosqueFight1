@@ -2,14 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class amigo_1 : MonoBehaviour
 {
     public float patrolSpeed = 0f;
     public float canhgeTargetD = 0.1f;
+    public bool flip = false;
+
+    public Animator animAmigo;
 
     int currentTarget = 0;
 
-
+    private void Start()
+    {
+        animAmigo = this.GetComponent<Animator>();
+    }
     void Update()
     {
         if(MoveToTarget())
@@ -17,6 +24,11 @@ public class amigo_1 : MonoBehaviour
             currentTarget = GetNextTarget();
             
         }
+    }
+
+    private void FixedUpdate()
+    {
+        animAmigo.SetBool("Flip", flip);
     }
 
     private bool MoveToTarget()
@@ -50,10 +62,12 @@ public class amigo_1 : MonoBehaviour
 
             if (direcion.x < transform.position.x)
             {
+                flip = false;
                 print("izqui");
             }
             else if (direcion.x > transform.position.x)
             {
+                flip = true;
                 print("dere");
             }
 
