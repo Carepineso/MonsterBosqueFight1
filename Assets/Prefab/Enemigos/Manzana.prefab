@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4574087662216834551}
   - component: {fileID: 7743000069272520347}
   - component: {fileID: 2028270628403055301}
-  - component: {fileID: 2640322037036494966}
   - component: {fileID: 6757977637562723854}
+  - component: {fileID: -4550148713990908288}
   m_Layer: 6
   m_Name: Manzana
   m_TagString: Enemigo
@@ -125,29 +125,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2640322037036494966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064487620850243662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12c32dfd949d1840b0fdef45cff6a58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  estado: 1
-  patrolSpeed: 5
-  canhgeTargetD: 0.1
-  flip: 0
-  radio: 3
-  contE2: 0
-  iContE2: 1
-  capaParceros:
-    serializedVersion: 2
-    m_Bits: 55
-  objetivoSeguir: {fileID: 0}
 --- !u!95 &6757977637562723854
 Animator:
   serializedVersion: 4
@@ -168,3 +145,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-4550148713990908288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064487620850243662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c686b72cd5cf9a64784b37b5d72c8af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  estado: 1
+  patrolSpeed: 5
+  canhgeTargetD: 0.1
+  flip: 0
+  radio: 3
+  contE2: 0
+  iContE2: 1
+  capaParceros:
+    serializedVersion: 2
+    m_Bits: 55
+  objetivoSeguir: {fileID: 0}

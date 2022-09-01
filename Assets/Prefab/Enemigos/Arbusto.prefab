@@ -149,6 +149,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   objetivoSeguir: {fileID: 0}
+  audio1: {fileID: 8300000, guid: ced91b2a35f239a4d916841618892a78, type: 3}
 --- !u!95 &-5562161522646923437
 Animator:
   serializedVersion: 4

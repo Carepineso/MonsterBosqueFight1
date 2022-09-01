@@ -2,31 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1 : MonoBehaviour
+public class Enemy3 : MonoBehaviour
 {
-    public Estados estado;
+    public Estados3 estado;
     public float patrolSpeed = 0f;
     public float canhgeTargetD = 0.1f;
     private bool mover = true;
     private bool canDie = false;
-    public bool invensible = false;
     public bool flip = false;
     public float radio = 3f;
-    public int contE1 = 0;
-    public int iContE1 = 1;
+    public int contE2 = 0;
+    public int iContE2 = 1;
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
-    private Animator animA;
-
-    private AudioSource audiocontrol;
+    private Animator animE3;
 
     int currentTarget = 0;
 
     private void Start()
     {
-        animA = this.GetComponent<Animator>();
-        audiocontrol= this.GetComponent<AudioSource>();
-        
+        animE3 = this.GetComponent<Animator>();
     }
 
     void Update()
@@ -34,17 +29,18 @@ public class Enemy1 : MonoBehaviour
         ControlEstados();
     }
 
+
     private void ControlEstados()
     {
         switch (estado)
         {
-            case Estados.agro:
+            case Estados3.agro:
                 EstadoAgro();
                 break;
-            case Estados.patrol:
+            case Estados3.patrol:
                 EstadoPatrol();
                 break;
-            case Estados.muerto:
+            case Estados3.muerto:
                 EstadoMuerto();
                 break;
             default:
@@ -52,17 +48,17 @@ public class Enemy1 : MonoBehaviour
         }
     }
 
-    private void CambiarEstado(Estados ne)
+    private void CambiarEstado(Estados3 ne)
     {
         estado = ne;
     }
 
     void EstadoPatrol()
     {
-       if (MoveToTarget())
-       {
-         currentTarget = GetNextTarget();
-       }
+        if (MoveToTarget())
+        {
+            currentTarget = GetNextTarget();
+        }
     }
 
     void EstadoAgro()
@@ -70,31 +66,31 @@ public class Enemy1 : MonoBehaviour
         Vector3 distanceVector = objetivoSeguir.position - transform.position;
         if (distanceVector.magnitude < canhgeTargetD)
         {
-            CambiarEstado(Estados.patrol);
+            CambiarEstado(Estados3.patrol);
             Destroy(objetivoSeguir.gameObject);
         }
         else if (canDie == true)
         {
-            CambiarEstado(Estados.muerto);
+            CambiarEstado(Estados3.muerto);
         }
         else
         {
             Vector3 velocityVector = distanceVector.normalized;
             transform.position += velocityVector * patrolSpeed * Time.deltaTime;
-
         }
 
-        
+
     }
 
     private void EstadoMuerto()
     {
         mover = false;
+        animE3.SetTrigger("Muerto");
         canDie = true;
-        animA.SetTrigger("AMuerto");
         Destroy(this.gameObject, 2.0f);
-        CambiarEstado(Estados.patrol);
+        CambiarEstado(Estados3.patrol);
         StartCoroutine(VolverdeMuerto());
+
     }
     IEnumerator VolverdeMuerto()
     {
@@ -121,7 +117,7 @@ public class Enemy1 : MonoBehaviour
             transform.position += velocityVector * patrolSpeed * Time.deltaTime;
         }
 
-        
+
 
         return false;
     }
@@ -132,7 +128,6 @@ public class Enemy1 : MonoBehaviour
         do
         {
             mover = false;
-            StartCoroutine(ADespertarse());
             StartCoroutine(Quieto());
             repetir = false;
             currentTarget = Random.Range(0, Qteszcohatl.singleton.enemyPoints.Length);
@@ -151,7 +146,7 @@ public class Enemy1 : MonoBehaviour
                 flip = false;
                 print("dere");
             }
-
+            
             if (hit.collider != null)
             {
                 if (hit.collider.CompareTag("Player"))
@@ -168,7 +163,7 @@ public class Enemy1 : MonoBehaviour
     private void FixedUpdate()
     {
         DetectarParceros();
-        animA.SetBool("AFlip", flip);
+        animE3.SetBool("Flip", flip);
     }
 
     private void OnDrawGizmos()
@@ -181,43 +176,35 @@ public class Enemy1 : MonoBehaviour
     {
         while (!mover)
         {
-            invensible = true;
-            animA.SetTrigger("ADormir");
-            yield return new WaitForSeconds(5.0f);
+            yield return new WaitForSeconds(0f);
             mover = true;
-            invensible = false;
         }
-    }
-
-    IEnumerator ADespertarse()
-    {
-        yield return new WaitForSeconds(3.0f);
-        animA.SetTrigger("ADespertarse");
     }
 
     void DetectarParceros()
     {
         Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
         Collider2D col = Physics2D.OverlapCircle(posicion, radio, capaParceros);
-        if (col!=null && col.CompareTag("parcero"))
-        {   
+        if (col != null && col.CompareTag("parcero"))
+        {
             objetivoSeguir = col.transform;
-            CambiarEstado(Estados.agro);
+            CambiarEstado(Estados3.agro);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Linterna")&& !invensible)
+        if (other.CompareTag("Linterna"))
         {
-            CambiarEstado(Estados.muerto);
+            CambiarEstado(Estados3.muerto);
+            
         }
     }
 
 }
 
 [System.Serializable]
-public enum Estados
+public enum Estados3
 {
     agro,
     patrol,
