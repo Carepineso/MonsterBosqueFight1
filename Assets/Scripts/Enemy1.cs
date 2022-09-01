@@ -90,7 +90,8 @@ public class Enemy1 : MonoBehaviour
 
         mover = false;
         canDie = true;
-        Destroy(this.gameObject, 1.0f);
+        animA.SetTrigger("AMuerto");
+        Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());
         
@@ -99,7 +100,7 @@ public class Enemy1 : MonoBehaviour
     {
         if (!mover && canDie)
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(2.0f);
             mover = true;
             canDie = false;
         }

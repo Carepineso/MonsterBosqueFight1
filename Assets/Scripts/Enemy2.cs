@@ -90,7 +90,7 @@ public class Enemy2 : MonoBehaviour
         mover = false;
         animE2.SetTrigger("Muerto");
         canDie = true;
-        Destroy(this.gameObject, 1.0f);
+        Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados2.patrol);
         StartCoroutine(VolverdeMuerto());
 
@@ -99,7 +99,7 @@ public class Enemy2 : MonoBehaviour
     {
         if (!mover && canDie)
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(2.0f);
             mover = true;
             canDie = false;
         }
