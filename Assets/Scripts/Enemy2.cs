@@ -16,6 +16,7 @@ public class Enemy2 : MonoBehaviour
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
     private Animator animE2;
+    private SoundManager soundManager;
 
     int currentTarget = 0;
 
@@ -197,6 +198,7 @@ public class Enemy2 : MonoBehaviour
         if (other.CompareTag("Linterna"))
         {
             CambiarEstado(Estados2.muerto);
+            soundManager.AudioCactus(1);
             
         }
     }

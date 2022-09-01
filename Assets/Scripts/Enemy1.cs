@@ -17,12 +17,14 @@ public class Enemy1 : MonoBehaviour
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
     private Animator animA;
+    private SoundManager soundManager;
 
     int currentTarget = 0;
 
     private void Start()
     {
         animA = this.GetComponent<Animator>();
+        soundManager=FindObjectOfType<SoundManager>();
     }
 
     void Update()
@@ -57,7 +59,7 @@ public class Enemy1 : MonoBehaviour
     {
        if (MoveToTarget())
        {
-           currentTarget = GetNextTarget();
+         currentTarget = GetNextTarget();
        }
     }
 
@@ -88,6 +90,7 @@ public class Enemy1 : MonoBehaviour
         mover = false;
         canDie = true;
         animA.SetTrigger("AMuerto");
+        soundManager.AudioManzana(1);
         Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());
@@ -196,7 +199,7 @@ public class Enemy1 : MonoBehaviour
         Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
         Collider2D col = Physics2D.OverlapCircle(posicion, radio, capaParceros);
         if (col!=null && col.CompareTag("parcero"))
-        {
+        {   
             objetivoSeguir = col.transform;
             CambiarEstado(Estados.agro);
         }
@@ -207,7 +210,6 @@ public class Enemy1 : MonoBehaviour
         if (other.CompareTag("Linterna")&& !invensible)
         {
             CambiarEstado(Estados.muerto);
-            
         }
     }
 
