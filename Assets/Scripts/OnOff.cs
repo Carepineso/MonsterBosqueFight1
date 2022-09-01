@@ -53,15 +53,17 @@ public class OnOff : MonoBehaviour
 
     public void OnOff2()
     {
-        soundManager.SeleccionAudio(0);
+       
         collidosde.enabled = !collidosde.enabled;
         luz.enabled = !luz.enabled;
+        soundManager.SeleccionAudio(0);
     }
 
     IEnumerator Prender()
     {
         yield return new WaitForSeconds(5F);
         prendida=true;
+
     }
 
 }
