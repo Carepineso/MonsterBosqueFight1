@@ -141,6 +141,7 @@ MonoBehaviour:
   patrolSpeed: 5
   canhgeTargetD: 0.1
   invensible: 0
+  flip: 0
   radio: 3
   contE1: 0
   iContE1: 1
