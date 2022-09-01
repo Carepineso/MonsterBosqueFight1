@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   estado: 1
-  patrolSpeed: 5
+  patrolSpeed: 3
   canhgeTargetD: 0.1
   flip: 0
   radio: 3
@@ -169,6 +169,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   objetivoSeguir: {fileID: 0}
+  puffAmi: {fileID: 8675362010129264783, guid: 724eed8ab15f7f64bbf7a2689c8004f3, type: 3}
+  puffEne: {fileID: 4631309436287969028, guid: b3a82b2c2a92c2b4eb0cadfe1d129c95, type: 3}
 --- !u!114 &-2487931740759718286
 MonoBehaviour:
   m_ObjectHideFlags: 0

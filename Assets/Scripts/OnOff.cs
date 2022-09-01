@@ -37,11 +37,11 @@ public class OnOff : MonoBehaviour
 
         if (collidosde.enabled && stamina>0)
         {
-            stamina -= 5.0f*Time.deltaTime;
+            stamina -= 20.0f*Time.deltaTime;
         }
         else if (!collidosde.enabled && stamina<maxstamina)
         {
-            stamina += 3.0f * Time.deltaTime;
+            stamina += 5.0f * Time.deltaTime;
         } else if (stamina<=0f && collidosde.enabled)
         {
             prendida=false;

@@ -17,7 +17,8 @@ public class Enemy1 : MonoBehaviour
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
     private Animator animA;
-
+    public GameObject puffAmi;
+    public GameObject puffEne;
     private SoundManager soundManager;
 
     int currentTarget = 0;
@@ -73,7 +74,9 @@ public class Enemy1 : MonoBehaviour
         if (distanceVector.magnitude < canhgeTargetD)
         {
             CambiarEstado(Estados.patrol);
+            
             Destroy(objetivoSeguir.gameObject);
+            Instantiate(puffAmi, transform.position, transform.rotation);
         }
         else if (canDie == true)
         {
@@ -95,6 +98,7 @@ public class Enemy1 : MonoBehaviour
         canDie = true;
         animA.SetTrigger("AMuerto");
         soundManager.SeleccionAudio(1);
+        Instantiate(puffEne, transform.position, transform.rotation);
         Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());

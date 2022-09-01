@@ -18,7 +18,8 @@ public class Enemy2 : MonoBehaviour
     private Animator animE2;
     private SoundManager soundManager;
     int currentTarget = 0;
-
+    public GameObject puffAmi;
+    public GameObject puffEne;
     private void Start()
     {
         animE2 = this.GetComponent<Animator>();
@@ -70,6 +71,7 @@ public class Enemy2 : MonoBehaviour
         {
             CambiarEstado(Estados2.patrol);
             Destroy(objetivoSeguir.gameObject);
+            Instantiate(puffAmi, transform.position, transform.rotation);
         }
         else if (canDie == true)
         {
@@ -90,6 +92,7 @@ public class Enemy2 : MonoBehaviour
         animE2.SetTrigger("Muerto");
         canDie = true;
         soundManager.SeleccionAudio(2);
+        Instantiate(puffEne, transform.position, transform.rotation);
         Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados2.patrol);
         StartCoroutine(VolverdeMuerto());
