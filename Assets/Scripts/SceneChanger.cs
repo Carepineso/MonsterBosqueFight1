@@ -29,7 +29,7 @@ public class SceneChanger : MonoBehaviour
     {
         if (contadorAmigos.contM==0)
         {
-            SceneManager.LoadScene("EndScene");
+            SceneManager.LoadScene("End2");
         }
     }
 }
