@@ -98,7 +98,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.09433091, y: -0.21224469}
@@ -140,6 +140,7 @@ MonoBehaviour:
   estado: 1
   patrolSpeed: 5
   canhgeTargetD: 0.1
+  flip: 0
   radio: 3
   contE2: 0
   iContE2: 1
