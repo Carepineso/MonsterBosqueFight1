@@ -1262,6 +1262,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &1721509423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1436,3 +1437,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4c5c60ae5d3832459f11b27b2de6ee9, type: 3}
+=======
+>>>>>>> Stashed changes

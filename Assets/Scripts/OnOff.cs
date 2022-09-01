@@ -11,11 +11,13 @@ public class OnOff : MonoBehaviour
     public float stamina = 100f;
     public float maxstamina = 100f;
     public bool prendida = true;
+    private SoundManager soundManager;
     // Start is called before the first frame update
     void Start()
     {
         collidosde = GetComponent<PolygonCollider2D>();
         luz = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
+        soundManager=FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -51,9 +53,9 @@ public class OnOff : MonoBehaviour
 
     public void OnOff2()
     {
+        soundManager.SeleccionAudio(0);
         collidosde.enabled = !collidosde.enabled;
         luz.enabled = !luz.enabled;
-        
     }
 
     IEnumerator Prender()
