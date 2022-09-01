@@ -29,6 +29,7 @@ public class amigo_1 : MonoBehaviour
     private void FixedUpdate()
     {
         animAmigo.SetBool("Flip", flip);
+        animAmigo.SetBool("Flip2", flip);
     }
 
     private bool MoveToTarget()

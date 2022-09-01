@@ -139,6 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolSpeed: 5
   canhgeTargetD: 0.1
+  flip: 0
+  animAmigo: {fileID: 0}
 --- !u!95 &2457903223020374952
 Animator:
   serializedVersion: 4
@@ -149,7 +151,7 @@ Animator:
   m_GameObject: {fileID: 5312464459835022651}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e706f0e61ec25da4b9b976766a38e55b, type: 2}
+  m_Controller: {fileID: 9100000, guid: a0a2cb9038a135348952532bf1b856a5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
