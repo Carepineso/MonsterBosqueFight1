@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 751462819301918022}
   - component: {fileID: 8602944358527880452}
   - component: {fileID: 2683264229147058445}
+  - component: {fileID: 8134623819363913969}
   m_Layer: 6
   m_Name: Cactus
   m_TagString: Enemigo
@@ -168,3 +169,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8134623819363913969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3527012252981756757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 0
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.30337143, y: -3.0875554, z: 0.00000047683716}
+  - {x: -0.0243752, y: 3.213104, z: 0.00000047683716}
+  - {x: 0.61026824, y: 1.567024, z: 0.00000047683716}
+  - {x: 0.45682025, y: -2.3900638, z: 0.00000047683716}
+  m_ShapePathHash: 936753211
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 161890

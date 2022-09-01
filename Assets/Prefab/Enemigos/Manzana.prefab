@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2028270628403055301}
   - component: {fileID: 6757977637562723854}
   - component: {fileID: -4550148713990908288}
+  - component: {fileID: -2487931740759718286}
   m_Layer: 6
   m_Name: Manzana
   m_TagString: Enemigo
@@ -168,3 +169,30 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   objetivoSeguir: {fileID: 0}
+--- !u!114 &-2487931740759718286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064487620850243662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 0
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: 0.35852134, y: -2.9756122, z: 0.00000047683716}
+  - {x: 0.54494977, y: 2.2964783, z: 0.00000047683716}
+  - {x: -0.9710717, y: 1.8969889, z: 0.00000047683716}
+  - {x: -0.61153114, y: -1.8570428, z: 0.00000047683716}
+  m_ShapePathHash: 1262220731
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 161930
