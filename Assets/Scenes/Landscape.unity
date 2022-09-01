@@ -3366,9 +3366,8 @@ MonoBehaviour:
   - {fileID: 1179474266}
   - {fileID: 1147991800}
   prefabParcero:
-  - {fileID: 1058201773050015278, guid: 9dce39a7adf10f541a1dbcb5d4b4f7d5, type: 3}
+  - {fileID: 5312464459835022651, guid: 5ffccbd4cdc7e144388424d05f3139f2, type: 3}
   - {fileID: 5312464459835022651, guid: e5078d0fad0582d45beac4ded5503216, type: 3}
-  - {fileID: 4317415855904618594, guid: fbe9008649c56504ca6b496c6d56c63b, type: 3}
   can_sp: 1
 --- !u!114 &411010767
 MonoBehaviour:
