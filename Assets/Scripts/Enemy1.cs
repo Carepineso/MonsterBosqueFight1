@@ -99,6 +99,7 @@ public class Enemy1 : MonoBehaviour
         animA.SetTrigger("AMuerto");
         soundManager.SeleccionAudio(1);
         Instantiate(puffEne, transform.position, transform.rotation);
+        soundManager.SeleccionAudio(4);
         Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());

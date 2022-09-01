@@ -93,6 +93,7 @@ public class Enemy2 : MonoBehaviour
         canDie = true;
         soundManager.SeleccionAudio(2);
         Instantiate(puffEne, transform.position, transform.rotation);
+        soundManager.SeleccionAudio(4);
         Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados2.patrol);
         StartCoroutine(VolverdeMuerto());
