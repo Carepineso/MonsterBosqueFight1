@@ -1360,7 +1360,7 @@ GameObject:
   - component: {fileID: 217041674}
   m_Layer: 0
   m_Name: Linterna
-  m_TagString: Untagged
+  m_TagString: Linterna
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1846,7 +1846,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217041672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19825be0dc3f0154286361db21d9ca4f, type: 3}
   m_Name: 
@@ -3400,8 +3400,6 @@ MonoBehaviour:
   - {fileID: 1698553135}
   - {fileID: 1745904855}
   prefabEnemy:
-  - {fileID: 2722777450503164310, guid: 4a7e0448e81798b44ba355f9ae5d0a33, type: 3}
-  - {fileID: 3527012252981756757, guid: 7bfbdfb104e296c43a4267e32363c90f, type: 3}
   - {fileID: 7064487620850243662, guid: 8e37bfb13af86214281ede41d2d66640, type: 3}
   can_sp: 1
 --- !u!114 &411010766
@@ -3487,7 +3485,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &435641517
 GameObject:
@@ -8688,7 +8686,7 @@ Transform:
   - {fileID: 391063721}
   - {fileID: 1125040127}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1061276387
 GameObject:
@@ -9442,7 +9440,7 @@ Transform:
   m_Children:
   - {fileID: 217041673}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1169757411
 Animator:
@@ -10356,7 +10354,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1331755985
 GameObject:
@@ -10929,7 +10927,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1456823619
 MonoBehaviour:
@@ -12343,7 +12341,7 @@ RectTransform:
   m_Children:
   - {fileID: 1563406583}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12822,7 +12820,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738654420
 GameObject:
