@@ -16,6 +16,7 @@ public class amigo_1 : MonoBehaviour
     private void Start()
     {
         animAmigo = this.GetComponent<Animator>();
+        GetNextTarget();
     }
     void Update()
     {
