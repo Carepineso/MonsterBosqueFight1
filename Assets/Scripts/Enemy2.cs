@@ -16,12 +16,13 @@ public class Enemy2 : MonoBehaviour
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
     private Animator animE2;
-
+    private SoundManager soundManager;
     int currentTarget = 0;
 
     private void Start()
     {
         animE2 = this.GetComponent<Animator>();
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
     void Update()
@@ -87,6 +88,7 @@ public class Enemy2 : MonoBehaviour
         mover = false;
         animE2.SetTrigger("Muerto");
         canDie = true;
+        soundManager.SeleccionAudio(2);
         Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados2.patrol);
         StartCoroutine(VolverdeMuerto());

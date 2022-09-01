@@ -18,15 +18,15 @@ public class Enemy1 : MonoBehaviour
     public Transform objetivoSeguir;
     private Animator animA;
 
-    private AudioSource audiocontrol;
+    private SoundManager soundManager;
 
     int currentTarget = 0;
 
     private void Start()
     {
         animA = this.GetComponent<Animator>();
-        audiocontrol= this.GetComponent<AudioSource>();
-        
+        soundManager = FindObjectOfType<SoundManager>();
+
     }
 
     void Update()
@@ -92,6 +92,7 @@ public class Enemy1 : MonoBehaviour
         mover = false;
         canDie = true;
         animA.SetTrigger("AMuerto");
+        soundManager.SeleccionAudio(1);
         Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());

@@ -97,7 +97,7 @@ AnimatorStateTransition:
     m_EventTreshold: 225
   - m_ConditionMode: 3
     m_ConditionEvent: MiraFloat
-    m_EventTreshold: -46
+    m_EventTreshold: -45
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3000595289588985394}
   m_Solo: 0
@@ -182,7 +182,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
