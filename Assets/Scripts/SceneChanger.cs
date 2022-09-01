@@ -22,7 +22,7 @@ public class SceneChanger : MonoBehaviour
 
     public void GameScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Landscape");
     }
 
     public void GameOver()
