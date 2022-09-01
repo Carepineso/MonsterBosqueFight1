@@ -66,8 +66,6 @@ public class Enemy2 : MonoBehaviour
         Vector3 distanceVector = objetivoSeguir.position - transform.position;
         if (distanceVector.magnitude < canhgeTargetD)
         {
-            //mato al objetivo
-            //print("MAT� A UN OBJETIVO");
             CambiarEstado(Estados2.patrol);
             Destroy(objetivoSeguir.gameObject);
         }
@@ -86,7 +84,6 @@ public class Enemy2 : MonoBehaviour
 
     private void EstadoMuerto()
     {
-        //print("Sex");
         mover = false;
         animE2.SetTrigger("Muerto");
         canDie = true;

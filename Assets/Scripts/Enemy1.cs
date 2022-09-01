@@ -66,8 +66,6 @@ public class Enemy1 : MonoBehaviour
         Vector3 distanceVector = objetivoSeguir.position - transform.position;
         if (distanceVector.magnitude < canhgeTargetD)
         {
-            //mato al objetivo
-            //print("MAT� A UN OBJETIVO");
             CambiarEstado(Estados.patrol);
             Destroy(objetivoSeguir.gameObject);
         }
@@ -79,6 +77,7 @@ public class Enemy1 : MonoBehaviour
         {
             Vector3 velocityVector = distanceVector.normalized;
             transform.position += velocityVector * patrolSpeed * Time.deltaTime;
+
         }
 
         
@@ -86,15 +85,12 @@ public class Enemy1 : MonoBehaviour
 
     private void EstadoMuerto()
     {
-        //print("Sex");
-
         mover = false;
         canDie = true;
         animA.SetTrigger("AMuerto");
         Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());
-        
     }
     IEnumerator VolverdeMuerto()
     {
