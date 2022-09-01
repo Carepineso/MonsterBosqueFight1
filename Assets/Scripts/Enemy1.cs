@@ -10,13 +10,22 @@ public class Enemy1 : MonoBehaviour
     private bool mover = true;
     private bool canDie = false;
     public bool invensible = false;
+    public bool flip = false;
     public float radio = 3f;
     public int contE1 = 0;
     public int iContE1 = 1;
     public LayerMask capaParceros;
     public Transform objetivoSeguir;
+    private Animator animA;
+    private SoundManager soundManager;
 
     int currentTarget = 0;
+
+    private void Start()
+    {
+        animA = this.GetComponent<Animator>();
+        soundManager=FindObjectOfType<SoundManager>();
+    }
 
     void Update()
     {
@@ -50,7 +59,7 @@ public class Enemy1 : MonoBehaviour
     {
        if (MoveToTarget())
        {
-           currentTarget = GetNextTarget();
+         currentTarget = GetNextTarget();
        }
     }
 
@@ -59,8 +68,6 @@ public class Enemy1 : MonoBehaviour
         Vector3 distanceVector = objetivoSeguir.position - transform.position;
         if (distanceVector.magnitude < canhgeTargetD)
         {
-            //mato al objetivo
-            //print("MAT� A UN OBJETIVO");
             CambiarEstado(Estados.patrol);
             Destroy(objetivoSeguir.gameObject);
         }
@@ -72,6 +79,7 @@ public class Enemy1 : MonoBehaviour
         {
             Vector3 velocityVector = distanceVector.normalized;
             transform.position += velocityVector * patrolSpeed * Time.deltaTime;
+
         }
 
         
@@ -79,19 +87,19 @@ public class Enemy1 : MonoBehaviour
 
     private void EstadoMuerto()
     {
-        //print("Sex");
         mover = false;
         canDie = true;
-        Destroy(this.gameObject, 1.0f);
+        animA.SetTrigger("AMuerto");
+        soundManager.AudioManzana(1);
+        Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());
-        
     }
     IEnumerator VolverdeMuerto()
     {
         if (!mover && canDie)
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(2.0f);
             mover = true;
             canDie = false;
         }
@@ -123,6 +131,7 @@ public class Enemy1 : MonoBehaviour
         do
         {
             mover = false;
+            StartCoroutine(ADespertarse());
             StartCoroutine(Quieto());
             repetir = false;
             currentTarget = Random.Range(0, Qteszcohatl.singleton.enemyPoints.Length);
@@ -133,10 +142,12 @@ public class Enemy1 : MonoBehaviour
 
             if (direcion.x < transform.position.x)
             {
+                flip = true;
                 print("izqui");
             }
             else if (direcion.x > transform.position.x)
             {
+                flip = false;
                 print("dere");
             }
 
@@ -156,6 +167,7 @@ public class Enemy1 : MonoBehaviour
     private void FixedUpdate()
     {
         DetectarParceros();
+        animA.SetBool("AFlip", flip);
     }
 
     private void OnDrawGizmos()
@@ -169,10 +181,17 @@ public class Enemy1 : MonoBehaviour
         while (!mover)
         {
             invensible = true;
-            yield return new WaitForSeconds(3.0f);
+            animA.SetTrigger("ADormir");
+            yield return new WaitForSeconds(5.0f);
             mover = true;
             invensible = false;
         }
+    }
+
+    IEnumerator ADespertarse()
+    {
+        yield return new WaitForSeconds(3.0f);
+        animA.SetTrigger("ADespertarse");
     }
 
     void DetectarParceros()
@@ -180,7 +199,7 @@ public class Enemy1 : MonoBehaviour
         Vector2 posicion = new Vector2(transform.position.x, transform.position.y);
         Collider2D col = Physics2D.OverlapCircle(posicion, radio, capaParceros);
         if (col!=null && col.CompareTag("parcero"))
-        {
+        {   
             objetivoSeguir = col.transform;
             CambiarEstado(Estados.agro);
         }
@@ -191,7 +210,6 @@ public class Enemy1 : MonoBehaviour
         if (other.CompareTag("Linterna")&& !invensible)
         {
             CambiarEstado(Estados.muerto);
-            
         }
     }
 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7743000069272520347}
   - component: {fileID: 2028270628403055301}
   - component: {fileID: 2640322037036494966}
+  - component: {fileID: 6757977637562723854}
   m_Layer: 6
   m_Name: Manzana
   m_TagString: Enemigo
@@ -28,9 +29,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7064487620850243662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.56, y: -4.4, z: -0.08735979}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -1.56, y: -4.4, z: 2.9}
+  m_LocalScale: {x: -0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -139,6 +140,7 @@ MonoBehaviour:
   estado: 1
   patrolSpeed: 5
   canhgeTargetD: 0.1
+  flip: 0
   radio: 3
   contE2: 0
   iContE2: 1
@@ -146,3 +148,23 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   objetivoSeguir: {fileID: 0}
+--- !u!95 &6757977637562723854
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064487620850243662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9bac3b6c46f89664fac7ff99e0ef7ed5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
