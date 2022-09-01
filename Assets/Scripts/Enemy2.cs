@@ -23,6 +23,7 @@ public class Enemy2 : MonoBehaviour
     {
         animE2 = this.GetComponent<Animator>();
         soundManager = FindObjectOfType<SoundManager>();
+        GetNextTarget();
     }
 
     void Update()

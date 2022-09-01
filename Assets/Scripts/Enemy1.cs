@@ -26,6 +26,7 @@ public class Enemy1 : MonoBehaviour
     {
         animA = this.GetComponent<Animator>();
         soundManager = FindObjectOfType<SoundManager>();
+        GetNextTarget();
 
     }
 
@@ -62,6 +63,7 @@ public class Enemy1 : MonoBehaviour
        if (MoveToTarget())
        {
          currentTarget = GetNextTarget();
+
        }
     }
 
