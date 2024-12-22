@@ -12,12 +12,17 @@ public class SpawnEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+
+    public void InicioJuego()
+    {
+        
         StartCoroutine(TSpawn());
     }
 
     IEnumerator TSpawn()
     {
-
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(4.0f, 14.0f));

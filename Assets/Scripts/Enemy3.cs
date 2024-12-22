@@ -20,6 +20,7 @@ public class Enemy3 : MonoBehaviour
     int currentTarget = 0;
     public GameObject puffAmi;
     public GameObject puffEne;
+    public Collider2D colliderEnemy3;
 
     private void Start()
     {
@@ -89,13 +90,13 @@ public class Enemy3 : MonoBehaviour
 
     private void EstadoMuerto()
     {
+        colliderEnemy3.enabled = !colliderEnemy3.enabled;
         mover = false;
-        animE3.SetTrigger("Muerto");
         canDie = true;
         soundManager.SeleccionAudio(3);
         Instantiate(puffEne, transform.position, transform.rotation);
         soundManager.SeleccionAudio(4);
-        Destroy(this.gameObject, 2.0f);
+        Destroy(this.gameObject);
         CambiarEstado(Estados3.patrol);
         StartCoroutine(VolverdeMuerto());
 

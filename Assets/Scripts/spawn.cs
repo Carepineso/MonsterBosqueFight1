@@ -13,6 +13,11 @@ public class spawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+
+    public void InicioAmigos()
+    {
         StartCoroutine(TSpawn());
     }
 

@@ -20,6 +20,7 @@ public class Enemy1 : MonoBehaviour
     public GameObject puffAmi;
     public GameObject puffEne;
     private SoundManager soundManager;
+    public Collider2D colliderEnemy;
 
     int currentTarget = 0;
 
@@ -28,7 +29,6 @@ public class Enemy1 : MonoBehaviour
         animA = this.GetComponent<Animator>();
         soundManager = FindObjectOfType<SoundManager>();
         GetNextTarget();
-
     }
 
     void Update()
@@ -94,13 +94,14 @@ public class Enemy1 : MonoBehaviour
 
     private void EstadoMuerto()
     {
+        colliderEnemy.enabled = !colliderEnemy.enabled;
         mover = false;
         canDie = true;
         animA.SetTrigger("AMuerto");
         soundManager.SeleccionAudio(1);
+        Destroy(this.gameObject);
         Instantiate(puffEne, transform.position, transform.rotation);
         soundManager.SeleccionAudio(4);
-        Destroy(this.gameObject, 2.0f);
         CambiarEstado(Estados.patrol);
         StartCoroutine(VolverdeMuerto());
     }

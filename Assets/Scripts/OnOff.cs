@@ -10,14 +10,17 @@ public class OnOff : MonoBehaviour
     public UnityEngine.Rendering.Universal.Light2D luz;
     public float stamina = 100f;
     public float maxstamina = 100f;
-    public bool prendida = true;
+    public bool prendida = false;
     private SoundManager soundManager;
+    public ContadorAmigos contadorAmigos;
     // Start is called before the first frame update
     void Start()
     {
         collidosde = GetComponent<PolygonCollider2D>();
         luz = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         soundManager=FindObjectOfType<SoundManager>();
+        luz.enabled = !luz.enabled;
+        collidosde.enabled = !collidosde.enabled;
     }
 
     // Update is called once per frame
@@ -42,18 +45,18 @@ public class OnOff : MonoBehaviour
         else if (!collidosde.enabled && stamina<maxstamina)
         {
             stamina += 5.0f * Time.deltaTime;
-        } else if (stamina<=0f && collidosde.enabled)
+        } 
+        else if (stamina<=0f && collidosde.enabled)
         {
             prendida=false;
             collidosde.enabled = !collidosde.enabled;
             luz.enabled = !luz.enabled;
             StartCoroutine(Prender());
-        } 
+        }   
     }
 
     public void OnOff2()
     {
-       
         collidosde.enabled = !collidosde.enabled;
         luz.enabled = !luz.enabled;
         soundManager.SeleccionAudio(0);
@@ -63,7 +66,6 @@ public class OnOff : MonoBehaviour
     {
         yield return new WaitForSeconds(5F);
         prendida=true;
-
     }
 
 }
